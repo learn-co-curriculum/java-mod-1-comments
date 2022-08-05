@@ -134,6 +134,7 @@ tags or annotations that help extract the information and put it into an HTML
 file. Consider the table of javadoc tags below:
 
 ![javadoc annotations](https://curriculum-content.s3.amazonaws.com/java-mod-1/comments/Javadoc-Annotations.png)
+
 [Reference: Java: A Beginner's Guide, 9th Edition](https://learning.oreilly.com/library/view/java-a-beginners/9781260463569/appb.xhtml#lev1_385)
 
 Annotations that start with the at-symbol (@) are called **block tags** or
