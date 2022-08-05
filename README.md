@@ -34,7 +34,7 @@ Let's look at these types of comments in more detail.
 
 A **single-line comment** is a comment with only one line of code.
 This may be used to quickly state something about the code in context.
-The syntax for a single-line comment always starts with two forward slashes 
+The syntax for a single-line comment always starts with two forward slashes
 (`//`) and is followed by text. Any text in front of the slashes will be
 compiled and interpreted.
 
@@ -61,7 +61,7 @@ public class Student {
 
 Notice how we have a single-line comment on its own line and another
 comment inline with executable code. Both of these are valid examples of how
-we may use the single-line comment. Again, the `this.major = "Undeclared";` 
+we may use the single-line comment. Again, the `this.major = "Undeclared";`
 expression will be executed because it is before
 the forward slashes.
 
@@ -127,7 +127,7 @@ and document their code in a readable format. It uses a similar syntax to
 multi-line comments. Documentation comments start with a forward slash
 followed by two asterisks (`/**`) and are closed with an asterisk followed by
 a forward slash (`*/`). The text will lay between the `/**` and `*/` and each
-new line of text will start with a space and an asterisk (` *`).
+new line of text will start with a space and an asterisk (`*`).
 
 Documentation comments also make use of the javadoc utility. **javadocs** are
 tags or annotations that help extract the information and put it into an HTML
@@ -180,6 +180,7 @@ public class Student {
     }
 }
 ```
+
 Note that we started the documentation comments with a main description of the
 class or method to follow. Documentation comments will more likely be attached
 to classes and methods rather than individual variables themselves.
