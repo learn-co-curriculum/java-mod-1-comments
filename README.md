@@ -42,28 +42,23 @@ compiled and interpreted.
 // This is a comment in Java!
 ```
 
-Let's see how this might be more helpful by looking back at our `Student` class.
+Let's see how this might be more helpful by looking back at our `SimpleSample`
+class.
 
 ```java
-public class Student {
-    private String firstName;
-    private String lastName;
-    private String major;
-
-    // This is a constructor
-    public Student(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.major = "Undeclared";    // Default the major to "Undeclared"
+public class SimpleSample {
+    // Enter the main method
+    public static void main(String[] args) {
+        System.out.println("Hello World");    // Print "Hello World" to the console
     }
 }
 ```
 
 Notice how we have a single-line comment on its own line and another
 comment inline with executable code. Both of these are valid examples of how
-we may use the single-line comment. Again, the `this.major = "Undeclared";`
-expression will be executed because it is before
-the forward slashes.
+we may use the single-line comment. Again, the
+`System.out.println("Hello World")` expression will be executed because it is
+before the forward slashes.
 
 ## Multi-Line Comments
 
@@ -82,13 +77,15 @@ compiled or interpreted.
 ```
 
 Let's apply this to some code for context by looking at an implementation of the
-`Student` class.
+`SimpleSample` class.
 
 ```java
-/* Suzie and Dustin are new students
- but Dustin has not yet figured out his major */
-Student suzie = new Student("Suzie", "Bingham", "Computer Science");
-Student dustin = new Student("Dustin", "Henderson");
+public class SimpleSample {
+    public static void main(String[] args) {
+        /* We want to print out a message to the user
+           so, we print out the message "Hello World" */
+        System.out.println("Hello World");
+    }
 }
 ```
 
@@ -97,24 +94,13 @@ We may comment out code to isolate a block of it to test or look for any
 errors.
 
 ```java
-public class Student {
-    private String firstName;
-    private String lastName;
-    private String major;
-    
-    /* Commenting out this constructor to force use of the other constructor
-       temporarily.
-    public Student(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.major = "Undeclared";
-    }
-     */
-    
-    public Student(String firstName, String lastName, String major) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.major = major;
+public class SimpleSample {
+    public static void main(String[] args) {
+        /* Commenting out this line so we can print a different message
+        System.out.println("Hello World");
+         */
+        
+        System.out.println("I hope you are well today!");
     }
 }
 ```
@@ -146,38 +132,24 @@ on the Oracle Java documentation - that is the documentation for the Java
 programming language. That documentation makes use of these annotations quite
 frequently.
 
-Let's look at our `Student` class again and apply some documentation comments.
+Let's look at our `SimpleSample` class again and apply some documentation
+comments.
 
 ```java
 /**
- * This class describes a Student attending a higher-level
- * education facility.
+ * This class is a simple class that prints
+ * a sample message to the console.
  * @author Flatiron School
  * @version 1.0
  */
-public class Student {
-    private String firstName;
-    private String lastName;
-    private String major;
-
+public class SimpleSample {
+    
     /**
-     * Constructor for the Student class
-     * @param firstName : String - first name of the student
-     * @param lastName : String - last name of the student
-     * @param major : String - student's concentration of study
+     * Main method for the class to be made "runnable"
+     * @param args : String[] - array of arguments
      */
-    public Student(String firstName, String lastName, String major) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.major = major;
-    }
-
-    /**
-     * This method calculates the student's numerical grade
-     * @return the grade the student currently holds
-     */
-    public int calculateGrade() {
-        // Calculate the grade of the student here
+    public static void main(String[] args) {
+        System.out.println("Hello World");
     }
 }
 ```
