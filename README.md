@@ -121,7 +121,7 @@ file. Consider the table of javadoc tags below:
 
 ![javadoc annotations](https://curriculum-content.s3.amazonaws.com/java-mod-1/comments/Javadoc-Annotations.png)
 
-[Reference: Java: A Beginner's Guide, 9th Edition](https://learning.oreilly.com/library/view/java-a-beginners/9781260463569/appb.xhtml#lev1_385)
+[Reference: Java, A Beginner's Guide, 5th Edition](https://www.oreilly.com/library/view/java-a-beginners/9780071606325/appblev1sec1.html)
 
 Annotations that start with the at-symbol (@) are called **block tags** or
 **stand-alone tags** and must be at the beginning of a documentation comment
@@ -160,4 +160,4 @@ to classes and methods rather than individual variables themselves.
 
 ## Resources
 
-- [Java: A Beginner's Guide, Ninth Edition, 9th Edition](https://learning.oreilly.com/library/view/java-a-beginners/9781260463569/)
+[Java, A Beginner's Guide, 5th Edition](https://www.oreilly.com/library/view/java-a-beginners/9780071606325/appblev1sec1.html)
